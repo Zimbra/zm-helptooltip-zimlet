@@ -10,9 +10,9 @@
 ### To deploy com\_zimbra\_convertd zimlet
 1). `$> mkdir ~/.zcs-deps`
 
-2). Ensure that the following jars are present under `~/.zcs-deps` dir.
+2). Ensure that the following jar is present under `~/.zcs-deps` dir.
 
-> ant-contrib-1.0b1.jar (You can get this from perforce ZimbraCommon/jars) or install ant-contrib globally.
+> ant-contrib-1.0b1.jar (or you may install ant-contrib globally).
 
 	The following dependencies would be resolved automatically:
 	
