@@ -1,0 +1,34 @@
+# Steps to build
+
+### Pre-requisites
+> Make sure you have the following packages cloned and zimbra setup to run the zimlet.
+
+`$> git clone ssh://git@stash.corp.synacor.com:7999/zimbra/zm-zcs.git ../zm-zcs`
+
+`$> git clone https://github.com/Zimbra/zimbra-package-stub.git ../zimbra-package-stub`
+
+### To deploy com\_zimbra\_convertd zimlet
+1). `$> mkdir ~/.zcs-deps`
+
+2). Ensure that the following jars are present under `~/.zcs-deps` dir.
+
+> ant-contrib-1.0b1.jar (You can get this from perforce ZimbraCommon/jars) or install ant-contrib globally.
+
+	The following dependencies would be resolved automatically:
+	
+	* commons-codec
+	* commons-httpclient
+	* com.google.guava
+	* javax.mail
+	* dom4j
+	* log4j
+	* com.unboundid
+
+	The following need to be published individually using ant publish-local.
+	* zm-client
+	* zm-common
+	* zm-soap
+	* zm-store
+	* zm-native
+
+3.) `$> ant package-zimlet` or `$> ant deploy-zimlet` - Deploys the zimlet.
