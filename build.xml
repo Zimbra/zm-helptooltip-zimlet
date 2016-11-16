@@ -12,7 +12,7 @@
 
 	<!-- archiving zimlet -->
 	<target name="package-zimlet" depends="build-init" description="put zimlet files into zip archive for deployment">
-		<zip destfile="${build.zimlet.dir}/${zimlet.file}" update="true">
+		<zip destfile="${build.zimlet.dir}/${zimlet.file}.zip" update="true">
 			<fileset dir="${zimlet.js.dir}" includes="*"/>
 		</zip>
 	</target>
@@ -23,7 +23,7 @@
 		<java classname="com.zimbra.cs.zimlet.ZimletUtil" fork="true" classpathref="class.path" failonerror="true">
 			<arg line="-q" />
 			<arg line="deploy" />
-			<arg file="${build.zimlet.dir}/${zimlet.file}" />
+			<arg file="${build.zimlet.dir}/${zimlet.file}.zip" />
 		</java>
 	</target>
 
