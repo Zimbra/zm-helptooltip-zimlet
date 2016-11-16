@@ -7,7 +7,7 @@
 
 `$> git clone https://github.com/Zimbra/zimbra-package-stub.git ../zimbra-package-stub`
 
-### To deploy com\_zimbra\_convertd zimlet
+### To deploy com\_zimbra\_tooltip zimlet
 1). `$> mkdir ~/.zcs-deps`
 
 2). Ensure that the following jar is present under `~/.zcs-deps` dir.
