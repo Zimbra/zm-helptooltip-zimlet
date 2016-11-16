@@ -2,7 +2,7 @@
 
     <import file="../zm-zcs/ant-global.xml" />
 
-	<property name="zimlet.file" value="com_zimbra_tooltip.zip" />
+	<property name="zimlet.file" value="com_zimbra_tooltip" />
 	<property name="zimlet.js.dir" location="js" />
 
 	<!-- Creating build directory -->
