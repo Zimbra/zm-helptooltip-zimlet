@@ -11,7 +11,7 @@
   <dependency org="log4j" name="log4j" rev="1.2.16" />
   <dependency org="javax.mail" name="mail" rev="1.4.5" />
   <dependency org="com.unboundid" name="unboundid-ldapsdk" rev="2.3.8" />
-  <dependency org="com.google.guava" name="guava" rev="13.0.1" />
+  <dependency org="com.google.guava" name="guava" rev="23.0" />
   <dependency org="zimbra" name="zm-common" rev="latest.integration" />
   <dependency org="zimbra" name="zm-native" rev="latest.integration" />
   <dependency org="zimbra" name="zm-store" rev="latest.integration" />
